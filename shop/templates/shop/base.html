@@ -14,17 +14,19 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div id="header">
-    <a href="" img src="{% static "img/mav.png" %}" alt="cupcakes"/>
-    <a href="/" class="logo">Mav Systems</a>
+<div id="header">
+    <a href="MavSystem.pythonanywhere.com">
+        <img border="0" alt="MavSystems" src="{% static "img/mav.png" %}" width="120" height="120">
+    </a>
   </div>
   <div id="subheader">
-   <div class="search-container">
+  <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit">Submit</button>
     </form>
   </div>
+  
     <div class="cart">
       {% with total_items=cart|length %}
           {% if cart|length > 0 %}
